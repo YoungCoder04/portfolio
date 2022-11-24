@@ -26,5 +26,4 @@ ___
 
 ---
 ### 이미지 링크 걸기
-[![다음 로고](https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png "다음로고")],
-(http://www.daum.net '다음사이트 바로가기')
+[![다음 로고](https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png "다음로고")](http://www.daum.net '다음사이트 바로가기')
