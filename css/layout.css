@@ -1,0 +1,332 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+a{
+  text-decoration:none;color:#333;
+  font-size:12px;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+  color:#333;
+}
+
+header{
+  width:100%;
+  height:100vh; /* vertical height약자 */
+  background-color:#ff0;
+  position:relative;
+  overflow:hidden;
+}
+header video{
+  width:100%;
+}
+.text_box{
+  position:absolute;
+  top:40%;left:33%;
+  z-index:100;
+  font-size:45px;
+  color:#fff;
+  text-align:center;
+  line-height:160%;
+}
+
+header > h1{
+  position:absolute;
+  left:3%;top:3%;
+}
+header img{width:100%;}
+header span{
+  position:absolute; width:30px;
+  display:inline-block;
+  left:50%;bottom:60px;
+  transform:translateX(-50%);
+  font-size:13px;
+  text-align:center;
+  color:#fff;animation:ani infinite 3s;
+}
+header i.fas{
+  color:#fff;
+  font-size:20px;
+  display:inline-block;
+}
+/* 애니메이션 */
+@keyframes ani{
+  0%{bottom:60px;}
+  50%{bottom:80px;}
+  100%{bottom:60px;}
+}
+
+.gnb{
+  background-color:rgb(89, 172, 250);
+  position:sticky;
+  /* bottom:0px;left:0px; */
+  top:0px;
+  width:100%;height:50px;
+  z-index:100;
+}
+.on{
+  background-color:rgba(89, 172, 250, .7) !important;
+}
+.gnb > ul{
+  display:flex;
+  justify-content: center;
+}
+.gnb > ul > li{}
+.gnb > ul > li > a{
+  display: block;
+  line-height:50px;
+  color:#fff;
+  padding:0px 20px;
+  font:bold 14px/50px 'Gugi'; /* 축약법 : 굵기 크기/줄간격 글꼴 */
+  text-transform:uppercase;
+}
+.gnb ul > li > a:hover{background:#30e2ca;}
+
+.act{
+  background: rgba(89, 172, 250, .7);
+  animation: gnb_a infinite 1s;
+}
+@keyframes gnb_a{
+  0%{background: #30e2ca;}
+  50%{background: rgba(0,0,0,.1);}
+  100%{background: #30e2ca;}
+} 
+
+/* 메인서식 */
+main{}
+main > section{
+  width:1200px;
+  height:800px;
+  margin:30px auto 30px auto;
+  background:#06b1f5;
+  color:#fff;
+}
+main > section > h2{
+  text-align:center;
+  font-size:26px;
+  padding:60px 0px 0px 0px;
+}
+
+.profile{position:relative;}
+.title{
+  font-size:20px;
+}
+.name01{}
+.pic{position:relative;}
+.pic div{
+  background:#fff;
+  width:350px;height:350px;
+  border-radius:50%;
+  transform:translate(100px, 50px);
+}
+.pic li{
+  position:absolute;
+  bottom:-80px;left:170px;
+  font-size:20px;
+}
+.pic li:nth-child(3){
+  position:absolute;
+  bottom:-170px;
+  line-height:130%;
+  font-size:15px;
+}
+.txt{
+  position:absolute;
+  bottom:-630px;right:550px;
+  line-height:160%;
+}
+.txt li{display:block;}
+.txt li:first-child, .txt li:nth-child(2), .txt li:nth-child(3){margin-bottom:50px}
+.title{margin-bottom:10px;}
+
+/*프로젝트 서식*/
+.pro{
+  display:flex;
+  position:relative;
+  width:1200px;height:700px;
+  /* background:#f00; */
+}
+
+.p_list{
+  width:570px;
+  text-align:left;
+  display:flex;
+  justify-content:space-around;
+}
+.p_list li{
+  position:relative;
+  top:30px;
+  height:25px;
+  padding:1px 13px 1px 13px;
+  background:rgb(92, 222, 255);
+  border:1px solid #fff;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
+}
+.p_list li a{
+  font-size:13px;
+  color:#fff;
+}
+.p_list li:hover{
+  background-color:#fff;
+  color:rgb(92, 222, 255);
+}
+.p_list li:hover .p_list li a{
+  color:rgb(92, 222, 255);
+}
+.p_list h2{
+  text-align:left;
+}
+
+.p_box{
+  width:45%;height:450px;
+  /* border:2px solid #000; */
+  position:relative;
+  top:150px;left:-80px;
+  overflow:hidden;
+}
+.p01{transform:translateX(-40px);}
+.t_box{
+  width:45%;height:420px;
+  /* border:2px solid #000; */
+  position:relative;
+  top:150px;right:50px;
+  padding-top:30px;
+  font-size:20px;
+  line-height:160%;
+}
+.view_site{
+  display:flex;
+  justify-content:space-around;
+}
+.view_site li{
+  width:80px;height:20px;
+  padding:5px;
+  color:#fff;
+  border:1px solid #fff;
+  transform:translateY(30px);
+  line-height:19px;
+  text-align:center;
+}
+.view_site a{
+  color:#fff;
+  font-size:15px;
+}
+
+
+/* 푸터서식 */
+footer{
+  background:#333;
+  color:#333;
+  text-align:center;
+  line-height:60px;
+}
+.fa-arrow-up{
+  font-size:23px;
+  color:#fff;
+}
+.t_btn{
+  width:55px;height:55px;
+  border:3px solid #208DC0;
+  border-radius:50%;
+  background:#208DC0;
+  position:fixed;bottom:30px;right:20px;
+  z-index:1000;
+}
+.t_btn:hover{
+  background-color: #fff;
+  color:#208DC0;
+  animation:btn_ani infinite 1s;
+}
+.t_btn:hover i.fa-arrow-up{
+  color:#208DC0;
+}
+@keyframes btn_ani{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0px);}
+}
+
+.txt01{background:#ff0;}
+		.txt02{background:#0f0;}
+
+		.b_box{
+			width:534px;height:340px;
+			border:3px solid #000;
+			position:relative;
+		}
+		.b_box nav{
+			position:absolute;
+			top:0px;right:0px;
+			width:160px;height:100%;
+			z-index:10;
+			background:rgba(255,255,255,0.9);
+		}
+		.b_box ul{padding:0px;margin:0px;}
+		.b_box li{
+			text-align:center;
+			list-style:none;
+		}
+		.b_box nav a{
+			display:block;
+			line-height:85px;
+			text-decoration:none;
+			color:#333;
+			font-size:18px;
+		}
+		.m_box{
+			width:1200px;height:950px;
+			margin:0px auto;
+			border:3px solid #000;
+			position:relative;
+		}
+		.m_box nav{
+			position:absolute;
+			top:0px;right:0px;
+			z-index:10;
+		}
+		.m_box ul{
+			position:absolute;
+			top:0px;right:0px;
+			width:1280px;
+			padding:0px;margin:0px auto;
+			display:flex;
+			justify-content:space-around;
+		}
+		.m_box li{
+			text-align:center;
+			list-style:none;
+		}
+		.m_box nav a{
+			display:block;
+			line-height:130px;
+			width:255px;height:150px;
+			opacity:0.8;
+			text-decoration:none;
+			background:rgba(255,255,255,0.9);
+			color:#333;
+			font-size:18px;
+		}
+		.m_box nav img{
+			width:255px;
+		}
+		.movie img{
+			margin-top:100px;
+		}
+		footer i.fas{
+			color:#fff;
+			background:rgba(0,0,0,.7);
+			padding:5px 10px 5px 10px;
+			font-size:75px;
+			position:absolute;
+			z-index:11;
+		}
+		i.fa-angle-left{
+			top:50%;left:0px;
+		}
+		i.fa-angle-right{
+			top:50%;right:0px;
+		}
