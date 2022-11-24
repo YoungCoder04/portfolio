@@ -22,4 +22,4 @@ ___
 [네이버](https://www.naver.com/ '네이버 바로가기')
 ---
 ### 이미지 삽입하기
-![다음 로고] (https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png)
+![다음 로고](https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png)
